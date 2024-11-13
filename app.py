@@ -4,8 +4,14 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Load model dan vectorizer dari file
-model_path = "/Users/rioanggoro/Documents/skripsi/model/deployment/model/model_prediksi_harga.pkl"
-vectorizer_path = "/Users/rioanggoro/Documents/skripsi/model/deployment/model/vectorizer.pkl"
+#model_path = "/Users/rioanggoro/Documents/skripsi/model/deployment/model/model_prediksi_harga.pkl"
+#vectorizer_path = "/Users/rioanggoro/Documents/skripsi/model/deployment/model/vectorizer.pkl"
+
+
+# Load model vps
+model_path = "model/model_prediksi_harga.pkl"
+vectorizer_path = "model/vectorizer.pkl"
+
 
 # Periksa apakah file ada untuk menghindari error
 try:
